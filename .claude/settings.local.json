@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cd \"D:/work_space/ai_project/todo/server\" && go vet ./... 2>&1)",
+      "Bash(cd \"D:/work_space/ai_project/todo/server\" && go build ./... 2>&1)",
+      "Bash(cd \"D:/work_space/ai_project/todo/server\" && timeout 15 go run main.go 2>&1 || true)",
+      "Bash(cd \"D:/work_space/ai_project/todo/client\" && npm create vite@latest . -- --template vue-ts 2>&1)",
+      "Bash(cd \"D:/work_space/ai_project/todo/client\" && npm install -D electron electron-builder concurrently wait-on 2>&1)",
+      "Bash(cd \"D:/work_space/ai_project/todo/client\" && npm install cross-env 2>&1)",
+      "Bash(cd \"D:/work_space/ai_project/todo/client\" && npx vite build 2>&1)",
+      "Bash(rustc:*)"
+    ]
+  }
+}
