@@ -75,13 +75,13 @@
 
     <!-- Window controls -->
     <div class="login-window-controls no-drag">
-      <div class="win-btn" @click="window.electronAPI?.minimize()" title="最小化">
+      <div class="win-btn" @click="handleMinimize" title="最小化">
         <el-icon :size="14"><Minus /></el-icon>
       </div>
-      <div class="win-btn" @click="window.electronAPI?.maximize()" title="最大化">
+      <div class="win-btn" @click="handleMaximize" title="最大化">
         <el-icon :size="14"><FullScreen /></el-icon>
       </div>
-      <div class="win-btn win-btn-close" @click="window.electronAPI?.forceClose()" title="关闭">
+      <div class="win-btn win-btn-close" @click="handleForceClose" title="关闭">
         <el-icon :size="14"><Close /></el-icon>
       </div>
     </div>
@@ -219,6 +219,16 @@ async function handleRegister() {
       registerLoading.value = false
     }, 1500)
   })
+}
+
+function handleMinimize() {
+  window.electronAPI?.minimize()
+}
+function handleMaximize() {
+  window.electronAPI?.maximize()
+}
+function handleForceClose() {
+  window.electronAPI?.forceClose()
 }
 
 function handleSendCode() {
