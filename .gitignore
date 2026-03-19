@@ -3,3 +3,4 @@ desktop/node_modules
 admin-frontend/node_modules
 admin-backend/*.exe
 backend/*.exe
+desktop/dist-electron
