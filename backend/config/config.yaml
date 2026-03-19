@@ -1,15 +1,15 @@
 server:
   port: 8080
-  mode: debug  # debug, release, test
+  mode: debug # debug, release, test
 
 log:
-  level: info  # debug, info, warn, error
+  level: info # debug, info, warn, error
 
 database:
   host: 127.0.0.1
   port: 3306
   username: root
-  password: root
+  password: aimind@mysql2019
   dbname: tbox
   charset: utf8mb4
   max_idle_conns: 10
@@ -34,8 +34,8 @@ email:
   from: noreply@example.com
 
 upload:
-  max_file_size: 2147483648  # 2GB
-  chunk_size: 5242880        # 5MB
+  max_file_size: 2147483648 # 2GB
+  chunk_size: 5242880 # 5MB
   upload_dir: ./uploads
   allowed_extensions:
     - .exe
