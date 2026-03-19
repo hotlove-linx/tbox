@@ -1,0 +1,33 @@
+server:
+  port: 8081
+  mode: debug
+
+log:
+  level: info
+
+database:
+  host: 127.0.0.1
+  port: 3306
+  username: root
+  password: root
+  dbname: tbox
+  charset: utf8mb4
+  max_idle_conns: 10
+  max_open_conns: 100
+
+redis:
+  host: 127.0.0.1
+  port: 6379
+  password: ""
+  db: 1
+
+jwt:
+  secret: admin-tbox-secret-key-2024-very-secure
+  expire_hours: 8
+  remember_expire_days: 7
+
+admin:
+  default_email: admin@tbox.com
+  default_password: Admin@12345
+  login_max_attempts: 5
+  login_lock_minutes: 30
