@@ -6,19 +6,19 @@ log:
   level: info # debug, info, warn, error
 
 database:
-  host: 127.0.0.1
+  host: 192.168.50.177
   port: 3306
   username: root
-  password: aimind@mysql2019
+  password: root
   dbname: tbox
   charset: utf8mb4
   max_idle_conns: 10
   max_open_conns: 100
 
 redis:
-  host: 127.0.0.1
+  host: 192.168.50.177
   port: 6379
-  password: ""
+  password: "WZmPe65AXwShjCC8"
   db: 0
 
 jwt:

@@ -6,7 +6,7 @@ log:
   level: info
 
 database:
-  host: 127.0.0.1
+  host: 192.168.50.177
   port: 3306
   username: root
   password: root
@@ -16,10 +16,10 @@ database:
   max_open_conns: 100
 
 redis:
-  host: 127.0.0.1
+  host: 192.168.50.177
   port: 6379
-  password: ""
-  db: 1
+  password: "WZmPe65AXwShjCC8"
+  db: 0
 
 jwt:
   secret: admin-tbox-secret-key-2024-very-secure
